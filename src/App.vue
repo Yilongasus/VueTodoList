@@ -142,10 +142,9 @@
             }
             else if (new Date(childItem.startDate).getTime() === new Date(childItem.endDate).getTime()) {
                 Swal.fire({
-                    title: "錯誤",
+                    title: "日期不可重複",
                     icon: "error",
-                    text: "日期不可重複",
-                    confirmButtonText: '了解了',
+                    confirmButtonText: '了解',
                     showCloseButton: true,
                 });
                 childItem.endDate = '';
